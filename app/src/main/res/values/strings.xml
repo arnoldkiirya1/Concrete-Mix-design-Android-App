@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">AutoRun Concrete Mix</string>
+    <!-- Define the string array -->
+    <string-array name="cement_strength_class_options">
+        <item>Select class</item>
+        <item>32.5</item>
+        <item>42.5</item>
+        <item>52.5</item>
+    </string-array>
+
+    <string-array name="select_aggregate_type_coarse">
+        <item>Select type </item>
+        <item>Crushed</item>
+        <item>Uncrushed</item>
+    </string-array>
+
+    <string-array name="select_aggregate_type_fine">
+        <item>Select type </item>
+        <item>Crushed</item>
+        <item>Uncrushed</item>
+    </string-array>
+
+    <string-array name="select_strength_results">
+        <item>Select … </item>
+        <item>Fewer than 20 results</item>
+        <item>20 or more results</item>
+    </string-array>
+
+    <string-array name="select_max_agg_size">
+        <item>Select … </item>
+        <item>10mm</item>
+        <item>20mm</item>
+        <item>40mm</item>
+    </string-array>
+
+    <string-array name="select_slump">
+        <item>Select … </item>
+        <item>0 – 10</item>
+        <item>10 – 30</item>
+        <item>30 – 60</item>
+        <item>60 – 180</item>
+    </string-array>
+
+    <string-array name="design_options">
+        <item>Select … </item>
+        <item>Reinforced</item>
+        <item>Mass</item>
+
+    </string-array>
+
+</resources>

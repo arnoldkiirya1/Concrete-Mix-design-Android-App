@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Input fields for water tests -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewWaterTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tests Results on Water"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsPH"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsPH"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="pH at 22.3 ֯C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsSulphate"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsSulphate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Sulphates"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsPhosphate"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsPhosphate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phosphates"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsNitrate"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsNitrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nitrates"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsTSS"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsTSS"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Total Suspended Solids" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsTDS"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsTDS"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Total Dissolved Solids" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsCarbonate"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsCarbonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Carbonates"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutWaterTestsBicarbonate"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/waterTestsBicarbonate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bicarbonates"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fields for aggregate tests -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewAggregateTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tests Results on Aggregates"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsWaterAbsorption"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsWaterAbsorption"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Water Absorption" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsSpecificGravity"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsSpecificGravity"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Specific Gravity" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsTenPercentFinesValue"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsTenPercentFinesValue"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Ten Percent Fines Value" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsAggregateCrushingValue"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsAggregateCrushingValue"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Aggregate Crushing Value" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsAggregateImpactValue"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsAggregateImpactValue"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Aggregate Impact Value" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsFlakinessIndex"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsFlakinessIndex"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Flakiness Index" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsElongationIndex"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsElongationIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Elongation Index" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutAggregateTestsBulkDensity"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/aggregateTestsBulkDensity"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Bulk Density" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fields for fine aggregate tests -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewFineAggregateTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tests Results on Fine Aggregates"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFineAggregateTestsSilkContent"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fineAggregateTestsSilkContent"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Silk Content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFineAggregateTestsOrganicContent"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fineAggregateTestsOrganicContent"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Organic Content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFineAggregateTestsBulkDensity"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fineAggregateTestsBulkDensity"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Bulk Density" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutFineAggregateTestsSpecificGravity"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fineAggregateTestsSpecificGravity"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Specific Gravity" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Input fields for cement tests -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textViewCementTests"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tests Results on Cement"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCementTestsCementFineness"
+            android:layout_width="match_parent"
+            android:inputType="numberDecimal"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cementTestsCementFineness"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Cement Fineness" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCementTestsSettingTimeInitial"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cementTestsSettingTimeInitial"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Setting Time - Initial" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutCementTestsSettingTimeFinal"
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cementTestsSettingTimeFinal"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="Setting Time - Final" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Save button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Submit Tests" />
+
+    </LinearLayout>
+</ScrollView>

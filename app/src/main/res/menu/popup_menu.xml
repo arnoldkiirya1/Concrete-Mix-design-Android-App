@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_add_tests"
+        android:title="Add Material Tests" />
+    <item
+        android:id="@+id/menu_add_design_data"
+        android:title="Add Design Data" />
+</menu>

@@ -1,0 +1,193 @@
+<TableLayout android:id="@+id/manageTable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Row 1 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/table_border"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="Qty"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="C "
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="W "
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="F.A"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="10mm"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="20mm"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <!-- Row 2 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/table_border"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="per m³ "
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/cem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/course10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/course20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <!-- Row 3 -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:background="@drawable/table_border"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:text="0.05"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/cem_trial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/water_trial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/fine_trial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/course10_trial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/course20_trial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="6dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+</TableLayout>

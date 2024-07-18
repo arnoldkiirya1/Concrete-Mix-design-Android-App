@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+<LinearLayout android:id="@+id/stage1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Characteristic Strength -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/characteristic_strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Characteristic Strength (N/mm²)"
+            android:inputType="numberDecimal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Number of Days -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Days"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Portion Defective -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/portion_defective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Percentage failure permitted (%)" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Defective Rate -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/defective_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:enabled="false"
+            android:hint="Defective rate (k)" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <!-- Strength Tests Results -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewstrenghtresults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength Tests Results"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/result_selection"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/select_strength_results" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Standard Deviation -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/standard_deviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:enabled="false"
+            android:hint="Standard Deviation"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Margin -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="#F5F5F5"
+            android:hint="Margin"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Target Mean Strength -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/target_mean_strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="#F5F5F5"
+            android:hint="Target Mean Strength"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Cement Strength Class -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cement Strength Class"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinner_cement_strength_class"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/cement_strength_class_options" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Aggregate Type (Coarse) -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Aggregate Type"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/aggregate_type_coarse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/select_aggregate_type_coarse" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Aggregate Type (Fine) -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine Aggregate Type"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/aggregate_type_fine"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/select_aggregate_type_fine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Free Water/Cement Ratio -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/free_water_cement_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:background="#F5F5F5"
+            android:hint="Free Water/Cement Ratio"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Maximum Free Water/Cement Ratio -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/max_free_water_cement_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Maximum Free Water/Cement Ratio"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Input fields for stage2 -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewslaump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slump (mm)"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/slump_or_vebe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/select_slump" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textViewmax_agg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maximum Aggregate Size"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/maximum_aggregate_size"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:entries="@array/select_max_agg_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/free_water_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Free-Water Content"
+            android:inputType="text"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cement_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cement Content"
+            android:background="#F5F5F5"
+            android:inputType="text"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/max_cement_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Maximum Cement Content"
+            android:inputType="text"
+            android:enabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/min_cement_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Minimum Cement Content"
+            android:inputType="text"
+            android:enabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/relative_density"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Relative density of aggregate (SSD)"
+            android:inputType="text"
+            android:enabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/concrete_density"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Concrete Density"
+            android:background="#F5F5F5"
+            android:inputType="text"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/total_Aggregate_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Aggregate Content"
+            android:inputType="text"
+            android:background="#F5F5F5"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/grading_fines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grading of Fines (% passing 600µm sieve)"
+            android:inputType="text"
+            android:enabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/proportion_of_fines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Proportion of Fine aggregates"
+            android:inputType="text"
+            android:background="#F5F5F5"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fine_aggregate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fine aggregate content"
+            android:inputType="text"
+            android:background="#F5F5F5"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/course_aggregate_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course aggregate content"
+            android:inputType="text"
+            android:background="#F5F5F5"
+            android:enabled="false" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Submit Design Data" />
+
+</LinearLayout>
+    </LinearLayout>
+</ScrollView>
