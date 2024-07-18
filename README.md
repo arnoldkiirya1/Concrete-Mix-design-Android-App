@@ -10,10 +10,6 @@ This repository contains an Android application for designing concrete mixes usi
 - **Save and Load Designs**: Save designed mixes for future reference and load previously saved designs.
 - **Unit Conversion**: Support for various units of measurement for input parameters.
 
-## Screenshots
-![Home Screen](path_to_screenshot1)
-![Mix Design Form](path_to_screenshot2)
-![Results Screen](path_to_screenshot3)
 
 ## Getting Started
 1. Clone the repository:
